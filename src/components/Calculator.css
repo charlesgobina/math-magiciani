@@ -1,0 +1,44 @@
+.calc-btns-wrapper {
+  background-color: #bdbdbd;
+  margin-left: 2px;
+}
+
+.display {
+  width: 100%;
+}
+
+.display input {
+  width: 100%;
+  height: 60px;
+  font-size: 30px;
+  text-align: right;
+  padding: 0 10px;
+  border-top: none;
+  outline: none;
+  color: #fff;
+  background-color: #858693;
+  box-sizing: border-box;
+}
+
+.calc-btns {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+.calc-btns > button {
+  font-size: 14px;
+  height: 60px;
+  font-family: sans-serif;
+  color: #474343;
+  background-color: #e0e0e0;
+  outline: none;
+  border: 0.2px solid #c9c9c9;
+}
+
+.calc-btns .elite {
+  background-color: #f1913f;
+}
+
+.calc-btns #round {
+  grid-column: 1/3;
+}

@@ -1,8 +1,12 @@
-/* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 import './Calculator.css';
 
 export default class Calculator extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   render() {
     return (
       <div className="wrapper">

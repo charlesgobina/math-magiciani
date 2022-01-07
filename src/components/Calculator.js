@@ -1,39 +1,57 @@
 import React, { Component } from 'react';
 import './Calculator.css';
+import calculate from '../logic/calculate';
 
 export default class Calculator extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      total: 0, next: null, operation: null,
+    };
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick =(e) => {
+    const { total, next, operation } = calculate(this.state, e.target.name);
+    if (e.target.name === 'AC') {
+      this.setState({
+        total: 0,
+        next: 0,
+      });
+    } else {
+      this.setState({ total, next, operation });
+    }
   }
 
   render() {
+    const { next, total } = this.state;
     return (
       <div className="wrapper">
         <div className="display">
-          <input id="display-main" type="text" />
+          { next ? (<input id="display-main" readOnly value={next} type="text" />) : <input readOnly id="display-main" value={total} type="text" /> }
         </div>
         <div className="calc-btns-wrapper">
           <div className="calc-btns">
-            <button className="button" type="button" value="AC" id="clear">AC</button>
-            <button className="button" type="button" value="+/-" id="pom">+/-</button>
-            <button className="button" type="button" value="%" id="mod">%</button>
-            <button className="button elite" type="button" value="/" id="quotient">/</button>
-            <button className="button" type="button" value="7" id="seven">7</button>
-            <button className="button" type="button" value="8" id="eight">8</button>
-            <button className="button" type="button" value="9" id="nine">9</button>
-            <button className="button elite" type="button" value="*" id="product">*</button>
-            <button className="button" type="button" value="4" id="four">4</button>
-            <button className="button" type="button" value="5" id="five">5</button>
-            <button className="button" type="button" value="6" id="six">6</button>
-            <button className="button elite" type="button" value="-" id="diff">-</button>
-            <button className="button" type="button" value="1" id="one">1</button>
-            <button className="button" type="button" value="2" id="two">2</button>
-            <button className="button" type="button" value="3" id="three">3</button>
-            <button className="button elite" type="button" value="+" id="sum">+</button>
-            <button className="button" type="button" id="round">0</button>
-            <button className="button" type="button" id="dot">.</button>
-            <button className="button elite" type="button" id="equals">=</button>
+            <button onClick={(e) => { this.handleClick(e); }} className="button" type="button" name="AC" id="clear">AC</button>
+            <button onClick={(e) => { this.handleClick(e); }} className="button" type="button" name="+/-" id="pom">+/-</button>
+            <button onClick={(e) => { this.handleClick(e); }} className="button" type="button" name="%" id="mod">%</button>
+            <button onClick={(e) => { this.handleClick(e); }} className="button elite" type="button" name="÷" id="quotient">/</button>
+            <button onClick={(e) => { this.handleClick(e); }} className="button" type="button" name="7" id="seven">7</button>
+            <button onClick={(e) => { this.handleClick(e); }} className="button" type="button" name="8" id="eight">8</button>
+            <button onClick={(e) => { this.handleClick(e); }} className="button" type="button" name="9" id="nine">9</button>
+            <button onClick={(e) => { this.handleClick(e); }} className="button elite" type="button" name="x" id="product">*</button>
+            <button onClick={(e) => { this.handleClick(e); }} className="button" type="button" name="4" id="four">4</button>
+            <button onClick={(e) => { this.handleClick(e); }} className="button" type="button" name="5" id="five">5</button>
+            <button onClick={(e) => { this.handleClick(e); }} className="button" type="button" name="6" id="six">6</button>
+            <button onClick={(e) => { this.handleClick(e); }} className="button elite" type="button" name="-" id="diff">-</button>
+            <button onClick={(e) => { this.handleClick(e); }} className="button" type="button" name="1" id="one">1</button>
+            <button onClick={(e) => { this.handleClick(e); }} className="button" type="button" name="2" id="two">2</button>
+            <button onClick={(e) => { this.handleClick(e); }} className="button" type="button" name="3" id="three">3</button>
+            <button onClick={(e) => { this.handleClick(e); }} className="button elite" type="button" name="+" id="sum">+</button>
+            <button onClick={(e) => { this.handleClick(e); }} className="button" type="button" name="0" id="round">0</button>
+            <button onClick={(e) => { this.handleClick(e); }} className="button" type="button" name="." id="dot">.</button>
+            <button onClick={(e) => { this.handleClick(e); }} className="button elite" type="button" name="=" id="equals">=</button>
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@
   width: 100%;
 }
 
-.display input {
+.display #display-main {
   width: 100%;
   height: 60px;
   font-size: 30px;

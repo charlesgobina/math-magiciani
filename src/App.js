@@ -1,7 +1,11 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Calculator from './components/Calculator';
 import './App.css';
+import Header from './components/Header';
+import Home from './components/Home';
+import Quote from './components/Quote';
 
 export default class App extends Component {
   constructor(props) {
@@ -12,10 +16,12 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <main className="App-header">
-          <h1>Math Magician</h1>
-          <Calculator />
-        </main>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/calculator" element={<Calculator />} />
+          <Route path="/quote" element={<Quote />} />
+        </Routes>
       </div>
     );
   }

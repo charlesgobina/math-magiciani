@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 150px 0;
+}
+
+.calcText {
+  font-size: 22px;
+  font-weight: 800;
+  color: #858693;
+}
+
 .calc-btns-wrapper {
   background-color: #bdbdbd;
   margin-left: 2px;
@@ -41,4 +63,15 @@
 
 .calc-btns #round {
   grid-column: 1/3;
+}
+
+@media screen and (max-width: 400px) {
+  .wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .calcText {
+    color: #858693;
+  }
 }

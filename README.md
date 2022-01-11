@@ -1,9 +1,16 @@
 # Math Magician
 "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read random math-related quotes. Its built using react.
+![Portfolio Homepage](public/magic-calc.png)
 
 ## Technologies Used
 * Languages (JSX, CSS)
 * Library (React)
+* Git
+* Gitflow
+
+## Live Demo
+* [Live Demo](https://math-magician-calc.netlify.app/)
+
 
 ## Software Requirements
 * Node.JS

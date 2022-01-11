@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+.naviBar {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.naviTitle {
+  font-weight: 600;
+  color: #f1913f;
+}
+
+.naviLinks {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.naviLinks li {
+  margin-right: 10px;
+}
+
+.naviLinks li a {
+  text-decoration: none;
+  color: #858693;
+  font-weight: 800;
+}
+
+.naviLinks li a:focus {
+  color: #fff;
+  background-color: #f1913f;
+  padding: 5px 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .naviBar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .naviTitle {
+    color: #858693;
+  }
+
+  .naviLinks li a {
+    color: #f1913f;
+  }
+}

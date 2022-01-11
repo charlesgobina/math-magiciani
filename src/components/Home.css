@@ -7,10 +7,17 @@
   font-family: 'Nunito', sans-serif;
 }
 
-.homeTitle,
+.homeTitle {
+  margin-top: 30px;
+  font-size: 30px;
+  padding: 10px;
+  text-align: left;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+
 .paraLast {
   font-weight: 600;
-  padding: 10px;
   font-size: 22px;
   text-align: left;
 }
@@ -28,6 +35,11 @@
   .homeTitle,
   .paraLast {
     text-align: center;
+  }
+
+  .homeTitle {
+    margin-top: 10px;
+    font-size: 25px;
   }
 
   .homePara {

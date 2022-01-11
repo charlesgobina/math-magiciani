@@ -15,7 +15,7 @@
 
 .naviTitle {
   font-weight: 600;
-  color: #858693;
+  color: #f1913f;
 }
 
 .naviLinks {
@@ -47,6 +47,10 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+  }
+
+  .naviTitle {
+    color: #858693;
   }
 
   .naviLinks li a {

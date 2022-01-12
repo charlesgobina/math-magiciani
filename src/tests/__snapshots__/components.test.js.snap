@@ -1,0 +1,241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test UI of the webpage Calculator displays on the page 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="calcText"
+  >
+    <p>
+      Let us do some math!
+    </p>
+  </div>
+  <div
+    className="calcSection"
+  >
+    <div
+      className="display"
+    >
+      <input
+        id="display-main"
+        readOnly={true}
+        type="text"
+        value={0}
+      />
+    </div>
+    <div
+      className="calc-btns-wrapper"
+    >
+      <div
+        className="calc-btns"
+      >
+        <button
+          className="button"
+          id="clear"
+          name="AC"
+          onClick={[Function]}
+          type="button"
+        >
+          AC
+        </button>
+        <button
+          className="button"
+          id="pom"
+          name="+/-"
+          onClick={[Function]}
+          type="button"
+        >
+          +/-
+        </button>
+        <button
+          className="button"
+          id="mod"
+          name="%"
+          onClick={[Function]}
+          type="button"
+        >
+          %
+        </button>
+        <button
+          className="button elite"
+          id="quotient"
+          name="÷"
+          onClick={[Function]}
+          type="button"
+        >
+          /
+        </button>
+        <button
+          className="button"
+          id="seven"
+          name="7"
+          onClick={[Function]}
+          type="button"
+        >
+          7
+        </button>
+        <button
+          className="button"
+          id="eight"
+          name="8"
+          onClick={[Function]}
+          type="button"
+        >
+          8
+        </button>
+        <button
+          className="button"
+          id="nine"
+          name="9"
+          onClick={[Function]}
+          type="button"
+        >
+          9
+        </button>
+        <button
+          className="button elite"
+          id="product"
+          name="x"
+          onClick={[Function]}
+          type="button"
+        >
+          *
+        </button>
+        <button
+          className="button"
+          id="four"
+          name="4"
+          onClick={[Function]}
+          type="button"
+        >
+          4
+        </button>
+        <button
+          className="button"
+          id="five"
+          name="5"
+          onClick={[Function]}
+          type="button"
+        >
+          5
+        </button>
+        <button
+          className="button"
+          id="six"
+          name="6"
+          onClick={[Function]}
+          type="button"
+        >
+          6
+        </button>
+        <button
+          className="button elite"
+          id="diff"
+          name="-"
+          onClick={[Function]}
+          type="button"
+        >
+          -
+        </button>
+        <button
+          className="button"
+          id="one"
+          name="1"
+          onClick={[Function]}
+          type="button"
+        >
+          1
+        </button>
+        <button
+          className="button"
+          id="two"
+          name="2"
+          onClick={[Function]}
+          type="button"
+        >
+          2
+        </button>
+        <button
+          className="button"
+          id="three"
+          name="3"
+          onClick={[Function]}
+          type="button"
+        >
+          3
+        </button>
+        <button
+          className="button elite"
+          id="sum"
+          name="+"
+          onClick={[Function]}
+          type="button"
+        >
+          +
+        </button>
+        <button
+          className="button"
+          id="round"
+          name="0"
+          onClick={[Function]}
+          type="button"
+        >
+          0
+        </button>
+        <button
+          className="button"
+          id="dot"
+          name="."
+          onClick={[Function]}
+          type="button"
+        >
+          .
+        </button>
+        <button
+          className="button elite"
+          id="equals"
+          name="="
+          onClick={[Function]}
+          type="button"
+        >
+          =
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test UI of the webpage Home displays on the page 1`] = `
+Array [
+  <h1
+    className="homeTitle"
+  >
+    Welcome to our page!
+  </h1>,
+  <div
+    className="homePara"
+  >
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consequuntur aliquid pariatur dolorem ut corrupti, eserunt eveniet culpa perspiciatis explicabo rem dignissimos tempore nemo quae a optio asperiores totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consequuntur aliquid pariatur dolorem ut corrupti, eserunt eveniet culpa perspiciatis explicabo rem dignissimos tempore nemo quae a optio asperiores totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consequuntur aliquid pariatur dolorem ut corrupti, eserunt eveniet culpa perspiciatis explicabo rem dignissimos tempore nemo quae a optio asperiores totam!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consequuntur aliquid pariatur dolorem ut corrupti, eserunt eveniet culpa perspiciatis explicabo rem dignissimos tempore nemo quae a optio asperiores totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consequuntur aliquid pariatur dolorem ut corrupti, eserunt eveniet culpa perspiciatis explicabo rem dignissimos tempore nemo quae a optio asperiores totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consequuntur aliquid pariatur dolorem ut corrupti, eserunt eveniet culpa perspiciatis explicabo rem dignissimos tempore nemo quae a optio asperiores totam!
+    </p>
+    <p
+      className="paraLast"
+    >
+      Enjoy!
+    </p>
+  </div>,
+]
+`;
+
+exports[`Test UI of the webpage Quote displays on the page 1`] = `
+<blockquote
+  cite="https://www.childup.com/blog/math-is-not-just-about-numbers-and-equations-its-about-learning-and-understanding#:~:text=As%20William%20Thurston%20said%2C%20%E2%80%9Cmathematics,be%20in%20the%20long%20run.&text=Ignoring%20math%20is%20as%20disabling,not%20knowing%20how%20to%20read."
+>
+  Mathematics is not about numbers, equations, computations, or algorithms: It is about understanding. - William Paul Thurston
+</blockquote>
+`;

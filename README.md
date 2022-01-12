@@ -9,7 +9,7 @@
 * Gitflow
 
 ## Live Demo
-* [Live Demo](https://math-magician-calc.netlify.app/)
+* [Live Demo](https://magic-mcrvs.netlify.app/)
 
 
 ## Software Requirements

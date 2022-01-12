@@ -1,7 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Calculator from '../components/Calculator';
-// import Header from '../components/Header';
 import Home from '../components/Home';
 import Quote from '../components/Quote';
 

@@ -12,6 +12,7 @@
   justify-content: center;
   gap: 20px;
   margin: 150px 0;
+  padding: 20px;
 }
 
 .calcText {
@@ -65,10 +66,10 @@
   grid-column: 1/3;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .wrapper {
     flex-direction: column;
-    padding: 20px;
+    padding: 30px;
   }
 
   .calcText {

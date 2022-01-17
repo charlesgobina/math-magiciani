@@ -9,7 +9,8 @@
 * Gitflow
 
 ## Live Demo
-* [Live Demo](https://magic-mcrvs.netlify.app/)
+* [Netlify Live Demo](https://magic-mcrvs.netlify.app/)
+* [Heroku Live Demo](https://math-magiciani.herokuapp.com/)
 
 
 ## Software Requirements
